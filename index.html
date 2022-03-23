@@ -71,23 +71,18 @@
  </div>
  
 
-
-   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <body id="clk">
-   <audio class="song" loops controls hidden>
-   <source src="/AUD-20220320-WA0014.mp3"></audio>
-   <script>
-   alert("Halo bang");
-   $('#clk').click(function(){
-   var audio = $('.song')[0];
-   try{
-   navigator.vibrate(20);}
-   catch(Exception){
-       console.log("Vibrate mode is not supported")
-   }
-      audio.play();        
-});
-   </script>
+<script>
+   var source = "AUD-20220320-WA0014.mp3"
+ var audio = document.createElement("audio");
+ //
+ audio.autoplay = true;
+ //
+ audio.load()
+ audio.addEventListener("load", function() { 
+     audio.play(); 
+ }, true);
+ audio.src = source;
+</script>
 
 
 
