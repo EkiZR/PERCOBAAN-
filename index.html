@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,12 +74,13 @@
  
 
 
-   <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+   
+   
     <body id="clk">
-   <audio class="song" loops controls>
-   <source src="AUD-20220320-WA0014.mp3"></audio>
+   <audio class="song" loops controls hidden>
+   <source src="y2mate.com - Marshmello  Alone Official Music Video.mp3"></audio>
    <script>
-   alert("Hallo guys");
+   alert("tes");
    $('#clk').click(function(){
    var audio = $('.song')[0];
    try{
@@ -85,10 +88,9 @@
    catch(Exception){
        console.log("Vibrate mode is not supported")
    }
-        audio.play();        
+ audio.play();        
 });
    </script>
-
 
 
 
